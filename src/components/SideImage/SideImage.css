@@ -1,0 +1,22 @@
+#side-image{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#side-image img{
+    width: 99%;
+    align-self: center;
+    transition: 0.5s;
+}
+
+#side-image img:hover{
+    transform: scale(1.015);
+}
+
+@media only screen and (max-width: 800px) {
+    #side-image{
+        flex-basis: 100%;
+    }
+}

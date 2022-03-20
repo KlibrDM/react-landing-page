@@ -1,0 +1,31 @@
+input, textarea{
+    width: 20vw;
+    min-width: 400px;
+    min-height: 25px;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    outline-color: #5266df;
+    transition: 0.3s;
+}
+
+textarea{
+    min-height: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input:hover, textarea:hover{
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 800px) {
+    input, textarea{
+        min-width: 90%;
+    }
+}

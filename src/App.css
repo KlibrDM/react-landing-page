@@ -1,0 +1,26 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AppContainer{
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.AppBottomContainer{
+    width: 100%;
+    margin-top: 120px;
+    background-image: url("./images/waves.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+}
+
+@media only screen and (max-width: 800px) {
+    .AppBottomContainer{
+        margin-top: 40px;
+        background-size: auto 100%;
+    }
+}

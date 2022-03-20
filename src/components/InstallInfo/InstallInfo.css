@@ -1,0 +1,27 @@
+.install-info{
+    flex-basis: 35%;
+    text-align: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.install-info:hover{
+    transform: scale(1.02);
+}
+
+.install-info h2{
+    margin-block-start: 0.5em;
+}
+
+@media only screen and (max-width: 800px) {
+    .install-info{
+        flex-basis: 75%;
+    }
+}

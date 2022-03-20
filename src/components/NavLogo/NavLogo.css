@@ -1,0 +1,14 @@
+#navbar-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navbar-logo img{
+    width: 70%;
+    transition: 0.2s;
+}
+
+#navbar-logo img:hover{
+    transform: scale(1.03);
+}

@@ -1,0 +1,28 @@
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+    padding: 20px 10px;
+}
+
+#footer img{
+    height: 36px;
+    max-height: 6vw;
+    transition: 0.2s;
+}
+
+#footer img:hover{
+    transform: scale(1.03);
+}
+
+#footer p{
+    color: white;
+    font-size: 1.1em;
+    transition: 0.2s;
+    margin-left: 20px;
+}
+
+#footer p:hover{
+    transform: scale(1.03)
+}
