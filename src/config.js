@@ -2,57 +2,57 @@
 export const logoHref = "#intro";
 export const items = [
   {"Features":"#features"},
-  {"Preview":"#preview"},
-  {"More Details":"#moredetails"},
+  {"Open Source":"#opensource"},
+  {"Installation":"#installation"},
   {"Contact":"#contact"}
 ];
 
 /*INTRODUCTION*/
 export const introAnchor = "intro"; //Should be the same as logoHref (no #)
-export const introTitle = "Landing Page";
-export const introDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus malesuada nunc, in vehicula diam viverra quis.";
-export const introButtonType = "github"; //Recognized button types include chrome, github, appstore, googleplay, amazon
+export const introTitle = "Modern New Tab Page";
+export const introDescription = "A clean and simple new tab Chrome extension in which you can organize your favorite websites. Try it for free!";
+export const introButtonType = "chrome"; //Recognized button types include chrome, github, appstore, googleplay, amazon
 export const introButtonText = ""; //Leave empty if you have a recognized button type
-export const introButtonLink = "https://github.com/KlibrDM/react-landing-page";
+export const introButtonLink = "https://chrome.google.com/webstore/detail/metro-speed-dial-modern-n/onhhmnkghemlcnlglcnjkhebiclbklpl?hl=en";
 //IMAGE NAME: preview1.png
 
 /*FEATURES*/
 export const featuresAnchor = "features";
 export const featuresTitle = "Features";
 export const featuresDetails = [
-  {"Feature 1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus malesuada nunc, in vehicula diam viverra quis."},
-  {"Feature 2":"Proin eros quam, ultricies viverra interdum sed, malesuada vitae odio. Curabitur sollicitudin ullamcorper mattis"},
-  {"Feature 3":"Maecenas imperdiet sed quam quis varius. Sed imperdiet arcu quis nisi dapibus malesuada."},
-  {"Feature 4":"Cras dignissim, ipsum quis mattis venenatis, justo metus hendrerit tortor, ac pretium lacus lorem malesuada risus."}
+  {"Minimalistic design":"We like things that look good, and we bet that so do you! Therefore, we made this extension with a modern, minimalistic metro design."},
+  {"Simple to use":"No need to overcomplicate things. This extension is so easy to use that even my 3 year old managed to figure it out!"},
+  {"Browse the web":"We integrated Google's search bar into our extension so you can google things as soon as you open your browser."},
+  {"Quick access to the tools you use":"We made a few quick access shortcuts so you can get to your history, downloads, bookmarks and extensions with a single click!"}
 ];
 //Background image name: detailsbg1.png
 
 /*MIDDLE TEXT*/
-export const midAnchor = "preview";
-export const midTitle = "Preview";
-export const midDescription = "Nunc in posuere ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut gravida hendrerit consectetur. Nam a hendrerit ligula, id egestas elit.";
-export const midButtonType = "amazon";
+export const midAnchor = "opensource";
+export const midTitle = "Open Source Code";
+export const midDescription = "Open source licensing encourages innovation through collaboration. If you have an idea that would make this extension better, feel free to contribute to this project.";
+export const midButtonType = "github";
 export const midButtonText = "";
-export const midButtonLink = "https://www.amazon.com";
+export const midButtonLink = "https://github.com/KlibrDM/metro-tab";
 //Image preview2.png
 
 /*BottomInfo*/
-export const botAnchor = "moredetails";
-export const botTitle = "More details";
+export const botAnchor = "installation"
+export const botTitle = "Installation"
 export const botDetails = [
-  {"detail1":{
-    "title":"Very important detail",
-    "desc":"Phasellus pharetra, orci sed bibendum tempus, ipsum lectus ullamcorper libero, non hendrerit ipsum velit vitae ante.",
-    "button":"googleplay",
+  {"users":{
+    "title":"For users",
+    "desc":"This extension is available on the Chrome Web Store. Just click the button bellow and then click on the Add to Chrome button.",
+    "button":"chrome",
     "buttonText":"",
-    "link":"https://play.google.com/"
+    "link":"https://chrome.google.com/webstore/detail/metro-speed-dial-modern-n/onhhmnkghemlcnlglcnjkhebiclbklpl?hl=en"
   }},
-  {"detail2":{
-    "title":"Not so important detail",
-    "desc":"Donec velit metus, egestas rutrum nibh sed, volutpat mattis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "button":"appstore",
+  {"developers":{
+    "title":"For developers",
+    "desc":"Feel free to clone the repository to your system. Follow the steps in the README to get the extension running in Chrome browser.",
+    "button":"github",
     "buttonText":"",
-    "link":"https://www.apple.com/app-store/"
+    "link":"https://github.com/KlibrDM/metro-tab"
   }}
 ];
 //Background image name: detailsbg2.png
