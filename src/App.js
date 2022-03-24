@@ -12,6 +12,7 @@ import SideImage from './components/SideImage/SideImage';
 import Details from './components/Details/Details';
 import FeatureInfo from './components/FeatureInfo/FeatureInfo';
 import InstallInfo from './components/InstallInfo/InstallInfo';
+import Question from './components/Question/Question.js';
 
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactInput from './components/ContactInput/ContactInput';
@@ -25,6 +26,7 @@ import preview from './images/preview1.png';
 import preview2 from './images/preview2.png';
 import detailsBg1 from './images/detailsbg1.png';
 import detailsBg2 from './images/detailsbg2.png';
+import detailsBg3 from './images/detailsbg3.png';
 
 function App() {
   return (
@@ -57,6 +59,7 @@ function App() {
           title={CONFIG.featuresTitle}
           id={CONFIG.featuresAnchor}
           bgImg={detailsBg1}
+          bgPos="bottom"
         >
           { CONFIG.featuresDetails.map((elem, index) => (
               <FeatureInfo 
@@ -85,6 +88,7 @@ function App() {
           title={CONFIG.botTitle}
           id={CONFIG.botAnchor}
           bgImg={detailsBg2}
+          bgPos="bottom"
         >
           { CONFIG.botDetails.map((obj, index) => (
               Object.keys(obj).map((elem, index) => (
@@ -97,6 +101,21 @@ function App() {
                   key={index}
                 ></InstallInfo>
               ))
+            )) }
+        </Details>
+
+        <Details
+          title={CONFIG.faqTitle}
+          id={CONFIG.faqAnchor}
+          bgImg={detailsBg3}
+          bgPos="top"
+        >
+          { CONFIG.faqDetails.map((elem, index) => (
+              <Question
+                question={Object.keys(elem)}
+                answer={elem[Object.keys(elem)[0]]}
+                key={index}
+              ></Question>
             )) }
         </Details>
 
