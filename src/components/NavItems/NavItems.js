@@ -4,18 +4,27 @@ import "./NavItems.css"
 
 export default function NavItems({ logo, logoHref, items }) {
   const [itemsShown, setItemsShown] = useState(true);
+  const minDesktopWidth = 800;
 
   //Toggle navbar items when hamburger button is pressed
   const handleNavbarItems = () => {
     setItemsShown(!itemsShown);
   };
 
+  const hideNavbarItemsOnClickForMobile = () => {
+    const width = window.innerWidth;
+    if(width < minDesktopWidth){
+      setItemsShown(false);
+    }
+  }
+
   //Set itemslist for conditional rendering
   let itemsList = (
     <div id="navbar-items">
     {
       items.map((elem, index) => (
-        <a href={elem[Object.keys(elem)[0]]} className="navbar-item" key={index}>
+        //Added on click for navbar items to hide them after click when on mobile
+        <a href={elem[Object.keys(elem)[0]]} className="navbar-item" onClick={hideNavbarItemsOnClickForMobile} key={index}>
           {Object.keys(elem)[0]}
         </a>
       ))
@@ -27,7 +36,7 @@ export default function NavItems({ logo, logoHref, items }) {
   useEffect(() => {
     const listenToResize = () => {
       const width = window.innerWidth;
-      if(width <= 800){
+      if(width <= minDesktopWidth){
         setItemsShown(false);
       }
       else{
