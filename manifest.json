@@ -1,6 +1,6 @@
 {
-  "short_name": "Metro-Tab Page",
-  "name": "Metro-Tab Landing Page",
+  "short_name": "Landing Page",
+  "name": "ReactJS Landing Page",
   "icons": [
     {
       "src": "favicon.ico",

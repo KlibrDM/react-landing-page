@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-landing-page/static/css/main.1db06fb8.css",
-    "main.js": "/react-landing-page/static/js/main.4437dc8c.js",
-    "static/js/787.4c4f2ac4.chunk.js": "/react-landing-page/static/js/787.4c4f2ac4.chunk.js",
-    "static/media/preview1.png": "/react-landing-page/static/media/preview1.d507c5a22579ccb55d28.png",
-    "static/media/preview2.png": "/react-landing-page/static/media/preview2.d1c9d0d41e4500dc935b.png",
+    "main.css": "/react-landing-page/static/css/main.10648c0e.css",
+    "main.js": "/react-landing-page/static/js/main.6b8e3c6e.js",
+    "static/js/787.b1f9b0ca.chunk.js": "/react-landing-page/static/js/787.b1f9b0ca.chunk.js",
+    "static/media/preview2.png": "/react-landing-page/static/media/preview2.6bdc126f3b81ed471ab9.png",
     "static/media/waves.png": "/react-landing-page/static/media/waves.4720d8226e09bced63d7.png",
+    "static/media/preview1.png": "/react-landing-page/static/media/preview1.9bd3a5a697740232c396.png",
     "static/media/detailsbg2.png": "/react-landing-page/static/media/detailsbg2.561ef3c567328fce2b39.png",
     "static/media/detailsbg1.png": "/react-landing-page/static/media/detailsbg1.9b6744d95d57cb76a14f.png",
     "static/media/googleplay-button.png": "/react-landing-page/static/media/googleplay-button.f3cd1061aac0723bbb5c.png",
     "index.html": "/react-landing-page/index.html",
-    "main.1db06fb8.css.map": "/react-landing-page/static/css/main.1db06fb8.css.map",
-    "main.4437dc8c.js.map": "/react-landing-page/static/js/main.4437dc8c.js.map",
-    "787.4c4f2ac4.chunk.js.map": "/react-landing-page/static/js/787.4c4f2ac4.chunk.js.map"
+    "main.10648c0e.css.map": "/react-landing-page/static/css/main.10648c0e.css.map",
+    "main.6b8e3c6e.js.map": "/react-landing-page/static/js/main.6b8e3c6e.js.map",
+    "787.b1f9b0ca.chunk.js.map": "/react-landing-page/static/js/787.b1f9b0ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1db06fb8.css",
-    "static/js/main.4437dc8c.js"
+    "static/css/main.10648c0e.css",
+    "static/js/main.6b8e3c6e.js"
   ]
 }
