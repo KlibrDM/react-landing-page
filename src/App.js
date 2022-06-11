@@ -41,83 +41,93 @@ function App() {
       </NavBar>
 
       <div className="AppContainer">
-        <SideBySide id={CONFIG.introAnchor}>
-          <SideText
-            title={CONFIG.introTitle}
-            description={CONFIG.introDescription}
-            button={CONFIG.introButtonType}
-            buttonText={CONFIG.introButtonText}
-            link={CONFIG.introButtonLink}
+        {CONFIG.introAnchor ?
+          <SideBySide id={CONFIG.introAnchor}>
+            <SideText
+              title={CONFIG.introTitle}
+              description={CONFIG.introDescription}
+              button={CONFIG.introButtonType}
+              buttonText={CONFIG.introButtonText}
+              link={CONFIG.introButtonLink}
+            >
+            </SideText>
+            <SideImage>
+              {preview}
+            </SideImage>
+          </SideBySide>
+        : <></>}
+
+        {CONFIG.featuresAnchor ?
+          <Details
+            title={CONFIG.featuresTitle}
+            id={CONFIG.featuresAnchor}
+            bgImg={detailsBg1}
+            bgPos="bottom"
           >
-          </SideText>
-          <SideImage>
-            {preview}
-          </SideImage>
-        </SideBySide>
-
-        <Details
-          title={CONFIG.featuresTitle}
-          id={CONFIG.featuresAnchor}
-          bgImg={detailsBg1}
-          bgPos="bottom"
-        >
-          { CONFIG.featuresDetails.map((elem, index) => (
-              <FeatureInfo 
-                title={Object.keys(elem)}
-                description={elem[Object.keys(elem)[0]]}
-                key={index}
-              ></FeatureInfo>
-            )) }
-        </Details>
-
-        <SideBySide id={CONFIG.midAnchor}>
-          <SideImage>
-            {preview2}
-          </SideImage>
-          <SideText
-            title={CONFIG.midTitle}
-            description={CONFIG.midDescription}
-            button={CONFIG.midButtonType}
-            buttonText={CONFIG.midButtonText}
-            link={CONFIG.midButtonLink}
-          >
-          </SideText>
-        </SideBySide>
-
-        <Details
-          title={CONFIG.botTitle}
-          id={CONFIG.botAnchor}
-          bgImg={detailsBg2}
-          bgPos="bottom"
-        >
-          { CONFIG.botDetails.map((obj, index) => (
-              Object.keys(obj).map((elem, index) => (
-                <InstallInfo 
-                  title={obj[elem].title}
-                  description={obj[elem].desc}
-                  button={obj[elem].button}
-                  buttonText={obj[elem].buttonText}
-                  link={obj[elem].link}
+            { CONFIG.featuresDetails.map((elem, index) => (
+                <FeatureInfo 
+                  title={Object.keys(elem)}
+                  description={elem[Object.keys(elem)[0]]}
                   key={index}
-                ></InstallInfo>
-              ))
-            )) }
-        </Details>
+                ></FeatureInfo>
+              )) }
+          </Details>
+        : <></>}
 
-        <Details
-          title={CONFIG.faqTitle}
-          id={CONFIG.faqAnchor}
-          bgImg={detailsBg3}
-          bgPos="top"
-        >
-          { CONFIG.faqDetails.map((elem, index) => (
-              <Question
-                question={Object.keys(elem)}
-                answer={elem[Object.keys(elem)[0]]}
-                key={index}
-              ></Question>
-            )) }
-        </Details>
+        {CONFIG.midAnchor ?
+          <SideBySide id={CONFIG.midAnchor}>
+            <SideImage>
+              {preview2}
+            </SideImage>
+            <SideText
+              title={CONFIG.midTitle}
+              description={CONFIG.midDescription}
+              button={CONFIG.midButtonType}
+              buttonText={CONFIG.midButtonText}
+              link={CONFIG.midButtonLink}
+            >
+            </SideText>
+          </SideBySide>
+        : <></>}
+
+        {CONFIG.botAnchor ?
+          <Details
+            title={CONFIG.botTitle}
+            id={CONFIG.botAnchor}
+            bgImg={detailsBg2}
+            bgPos="bottom"
+          >
+            { CONFIG.botDetails.map((obj, index) => (
+                Object.keys(obj).map((elem, index) => (
+                  <InstallInfo 
+                    title={obj[elem].title}
+                    description={obj[elem].desc}
+                    button={obj[elem].button}
+                    buttonText={obj[elem].buttonText}
+                    link={obj[elem].link}
+                    key={index}
+                  ></InstallInfo>
+                ))
+              )) }
+          </Details>
+        : <></>}
+
+        {CONFIG.faqAnchor ?
+          <Details
+            title={CONFIG.faqTitle}
+            id={CONFIG.faqAnchor}
+            bgImg={detailsBg3}
+            bgPos="top"
+          >
+            { CONFIG.faqDetails.map((elem, index) => (
+                <Question
+                  question={Object.keys(elem)}
+                  answer={elem[Object.keys(elem)[0]]}
+                  key={index}
+                ></Question>
+              )) }
+          </Details>
+        : <></>}
 
       </div>
       <div className="AppBottomContainer">

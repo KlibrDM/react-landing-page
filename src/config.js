@@ -8,6 +8,8 @@ export const items = [
 ];
 //FAQ section not included in the navbar items by default but it can be included
 
+//Leave anchor text empty if you don't want to render that component
+
 /*INTRODUCTION*/
 export const introAnchor = "intro"; //Should be the same as logoHref (no #)
 export const introTitle = "Modern New Tab Page";
@@ -59,14 +61,9 @@ export const botDetails = [
 //Background image name: detailsbg2.png
 
 /*FAQ*/
-export const faqAnchor = "faq";
-export const faqTitle = "Frequently asked questions";
-export const faqDetails = [
-  {"Question 1 (?)":"Vestibulum vel ante massa. Duis blandit sodales elementum. Sed sed ligula tempus, ornare turpis non, feugiat eros."},
-  {"Question 2 (?)":"Cras at sapien ut libero venenatis laoreet. Nam quam dui, imperdiet non volutpat id, tristique at eros. Vivamus urna ante, vehicula sit amet ultrices ac, eleifend viverra lacus."},
-  {"Question 3 (?)":"Donec vulputate orci nulla, eget dictum justo blandit ac."},
-  {"Question 4 (?)":"Fusce vel erat sodales, rhoncus mauris elementum, dapibus felis. Maecenas interdum et magna quis lacinia. Aenean ante ligula, porta sed euismod id, placerat rhoncus ex. Curabitur placerat diam a tempor fringilla. Nullam fringilla augue quis odio convallis, eu tristique urna facilisis."}
-];
+export const faqAnchor = "";
+export const faqTitle = "";
+export const faqDetails = [];
 //Background image name: detailsbg3.png
 
 /*Footer*/
