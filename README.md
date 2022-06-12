@@ -1,8 +1,8 @@
 # react-landing-page
 
-Live demo for `metro-tab`: https://klibrdm.github.io/react-landing-page/
+Live preview: https://klibrdm.github.io/react-landing-page/
 
-Template preview [here](#preview)
+`metro-tab` example: https://react-landing-page.onrender.com
 
 ### Landing Page template made with ReactJS
 
